@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", Arial, Tahoma, sans-serif;
+    text-align: center;
+    
+    
+}
+body{
+    background-image: url("Logo-dark.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-color: black;
+    
+}
+/**Menú superior*/
+#menu{
+    border: 2px solid black;
+    background-color: red;
+    padding-block: 0.1px;
+    border-color: black;
+    margin: 5px;
+    opacity: .8;
+
+    
+}
+.logo{
+    border-radius: 70px;
+    
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-left: 0%;
+    padding-right: 1%;
+    font-weight: bold;
+    
+}
+ul li{
+    
+    font-size: 15px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    padding: 5px 15px;
+}
+nav li a:hover{
+    background:#FF5757
+}
+
+.nav >ul li{
+    color: black;
+    display: none;
+}
+li.nav > ul:hover {
+    display: block;
+}
+/*Fin menú superior*/
+/*Mostrario*/
+
+section.exhibicion{
+    display: flex;
+    width: 1000px;
+    height: 430px;
+    text-align: center;
+    margin: 5% auto;
+    
+    
+}
+
+section.exhibicion img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    
+}
+section.exhibicion img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/*Fin mostrario*/
+/*Maquina*/
+
+.css-button-arrow--red {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: #ef233c;
+    
+  }
+  .css-button-arrow--red:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  .css-button-arrow--red:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+  .css-button-arrow--red:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+  }
+/**/
